@@ -1,101 +1,107 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 :root {
-	/* primary */
-	--bright-orange: hsl(31, 77%, 52%);
-	--dark-cyan: hsl(184, 100%, 22%);
-	--very-dark-cyan: hsl(179, 100%, 13%);
+  /* primary */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
 
-	/* neutral */
-	--transparent-white: hsla(0, 0%, 100%, 0.75);
-	--very-light-gray: hsl(0, 0%, 95%);
+  /* neutral */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
 }
 body {
-	min-height: 100vh;
-	font-size: 15px;
-	background-color: var(--very-light-gray);
+  min-height: 100vh;
+  font-size: 15px;
+  background-color: var(--very-light-gray);
 
-	/* just to center things! */
-	display: grid;
-	place-items: center;
+  /* just to center things! */
+  display: grid;
+  place-items: center;
 }
 
 .logo {
-	margin-bottom: 2em;
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 
 .card-container {
-	margin: 1em;
-	border-radius: 0.7em;
-	overflow: hidden;
+  margin: 1em;
+  border-radius: 0.7em;
+  overflow: hidden;
 
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
 }
 .card {
-	padding: 2em;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: flex-start;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .card h2 {
-	font-family: "Big Shoulders Display", cursive;
-	font-size: 2rem;
-	margin-bottom: 1em;
-	text-transform: uppercase;
-	color: var(--very-light-gray);
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2rem;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  color: var(--very-light-gray);
 }
 .card p {
-	font-family: "Lexend Deca", sans-serif;
-	color: var(--transparent-white);
-	margin-bottom: 1.7em;
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--transparent-white);
+  margin-bottom: 1.7em;
+  line-height: 25px;
 }
 
 .card-sedan {
-	background-color: var(--bright-orange);
+  background-color: var(--bright-orange);
 }
 .card-suv {
-	background-color: var(--dark-cyan);
+  background-color: var(--dark-cyan);
 }
 .card-luxury {
-	background-color: var(--very-dark-cyan);
+  background-color: var(--very-dark-cyan);
 }
 
 .card-sedan .btn {
-	color: var(--bright-orange);
+  color: var(--bright-orange);
 }
 .card-suv .btn {
-	color: var(--dark-cyan);
+  color: var(--dark-cyan);
 }
 .card-luxury .btn {
-	color: var(--very-dark-cyan);
+  color: var(--very-dark-cyan);
 }
 
 .btn {
-	font-family: "Lexend Deca", sans-serif;
-	background: var(--very-light-gray);
-	border: 2px solid #fff;
-	border-radius: 2em;
-	padding: 1em 1.5em;
-	margin-top: auto;
-	cursor: pointer;
+  font-family: "Lexend Deca", sans-serif;
+  background: var(--very-light-gray);
+  border: 2px solid #fff;
+  border-radius: 2em;
+  padding: 1em 1.5em;
+  margin-top: auto;
+  transform: translateY(-10px);
+  margin-bottom: 12px;
+  width: 150px;
+  cursor: pointer;
 }
 .btn:hover {
-	background: transparent;
-	color: #fff;
+  background: transparent;
+  color: #fff;
 }
 
 @media (min-width: 720px) {
-	.card-container {
-		flex-direction: row;
-	}
-	.card {
-		max-width: 40ch;
-	}
+  .card-container {
+    flex-direction: row;
+  }
+  .card {
+    max-width: 40ch;
+  }
 }
